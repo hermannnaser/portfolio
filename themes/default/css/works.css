@@ -1,0 +1,2065 @@
+/* =========================================
+   WORKS
+   ========================================= */
+
+.works-page {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 150px 6vw 100px;
+}
+
+
+/* =========================================
+   PAGE INTRO
+   ========================================= */
+
+.works-intro {
+    margin-bottom: 110px;
+}
+
+.works-label {
+    margin-bottom: 15px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.25em;
+
+    text-transform: uppercase;
+
+    opacity: 0.5;
+}
+
+.works-intro h1 {
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: 0.95;
+
+    font-weight: 700;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* =========================================
+   COMPANY
+   ========================================= */
+
+.video-company {
+    margin-bottom: 150px;
+}
+
+
+/* =========================================
+   COMPANY HEADER
+   ========================================= */
+
+.company-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+.company-number {
+    padding-top: 5px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.45;
+}
+
+.company-header h2 {
+    margin: 0;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: 0.03em;
+}
+
+.company-header p {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   PROJECT GRID
+   ========================================= */
+
+.video-project-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 45px 25px;
+}
+
+
+/* =========================================
+   PROJECT
+   ========================================= */
+
+.video-project {
+    display: block;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PROJECT PREVIEW
+   ========================================= */
+
+.project-preview {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: #111111;
+}
+
+.project-preview.vertical {
+    aspect-ratio: 9 / 16;
+}
+
+
+.project-preview video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.video-project:hover
+.project-preview video {
+    transform: scale(1.04);
+}
+
+
+.project-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.video-project:hover
+.project-overlay {
+    opacity: 1;
+}
+
+
+.project-overlay span {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+}
+
+
+.project-overlay strong {
+    font-size: 30px;
+
+    font-weight: 300;
+}
+
+
+/* =========================================
+   PROJECT INFO
+   ========================================= */
+
+.project-info {
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-top: 17px;
+}
+
+.project-info h3 {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    font-weight: 400;
+
+    letter-spacing: 0.02em;
+}
+
+.project-info span {
+    flex-shrink: 0;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+
+    opacity: 0.45;
+}
+
+
+/* =========================================
+   ENDMOOD
+   ========================================= */
+
+.endmood-project {
+    width: 25%;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .works-page {
+        padding:
+            110px
+            20px
+            70px;
+    }
+
+
+    .works-intro {
+        margin-bottom: 80px;
+    }
+
+
+    .works-intro h1 {
+        font-size:
+            clamp(45px, 15vw, 75px);
+    }
+
+
+    .video-company {
+        margin-bottom: 100px;
+    }
+
+
+    .company-header {
+        gap: 15px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .company-number {
+        font-size: 10px;
+    }
+
+
+    .company-header h2 {
+        font-size: 19px;
+    }
+
+
+    .company-header p {
+        font-size: 10px;
+    }
+
+
+    .video-project-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 35px 12px;
+    }
+
+
+    .project-info {
+        display: block;
+
+        padding-top: 12px;
+    }
+
+
+    .project-info h3 {
+        font-size: 12px;
+    }
+
+
+    .project-info span {
+        display: block;
+
+        margin-top: 5px;
+
+        font-size: 9px;
+    }
+
+
+    .endmood-project {
+        width: 55%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .works-page {
+        padding:
+            100px
+            15px
+            60px;
+    }
+
+
+    .video-project-grid {
+        gap: 28px 10px;
+    }
+
+
+    .company-header h2 {
+        font-size: 17px;
+    }
+
+
+    .project-info h3 {
+        font-size: 11px;
+    }
+
+
+    .endmood-project {
+        width: 65%;
+    }
+
+}
+/* =========================================
+   VIDEO DETAIL
+   ========================================= */
+
+.video-detail-page {
+    padding-top: 140px;
+}
+
+
+/* =========================================
+   DETAIL HEADER
+   ========================================= */
+
+.video-detail-header {
+    margin-bottom: 70px;
+}
+
+
+.video-back {
+    display: inline-block;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    opacity: 1;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.video-back:hover {
+    opacity: 0.55;
+}
+
+
+.video-detail-header h1 {
+    margin: 0;
+
+    font-size: clamp(45px, 7vw, 90px);
+
+    line-height: 0.95;
+
+    font-weight: 700;
+
+    letter-spacing: -0.04em;
+}
+
+
+.video-count {
+    margin-top: 20px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.12em;
+
+    opacity: 0.45;
+}
+
+
+/* =========================================
+   DETAIL VIDEO GRID
+   ========================================= */
+
+.detail-video-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 35px 25px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   VIDEO
+   ========================================= */
+
+.detail-video {
+    overflow: hidden;
+
+    background-color: #111111;
+}
+
+
+.detail-video video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   VERTICAL
+   ========================================= */
+
+.detail-video.vertical {
+    aspect-ratio: 9 / 16;
+}
+
+
+/* =========================================
+   HORIZONTAL
+   ========================================= */
+
+.detail-video.horizontal {
+    aspect-ratio: 16 / 9;
+
+    grid-column: span 2;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .video-detail-page {
+        padding-top: 110px;
+    }
+
+
+    .video-detail-header {
+        margin-bottom: 50px;
+    }
+
+
+    .video-back {
+        margin-bottom: 25px;
+
+        font-size: 25px;
+    }
+
+
+    .video-detail-header h1 {
+        font-size:
+            clamp(40px, 13vw, 70px);
+    }
+
+
+    .detail-video-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px 12px;
+    }
+
+
+    .detail-video.horizontal {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .video-detail-page {
+        padding-top: 100px;
+    }
+
+
+    .detail-video-grid {
+        gap: 20px 10px;
+    }
+
+}
+/* =========================================
+   PHOTOGRAPHY
+   ========================================= */
+
+.photography-page {
+    padding-bottom: 120px;
+}
+
+
+/* =========================================
+   PHOTO CATEGORY
+   ========================================= */
+
+.photo-category {
+    margin-bottom: 160px;
+}
+
+
+/* =========================================
+   PHOTO CATEGORY HEADER
+   ========================================= */
+
+.photo-category-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+
+.photo-category-number {
+    padding-top: 5px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.45;
+}
+
+
+.photo-category-header h2 {
+    margin: 0;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: 0.03em;
+}
+
+
+.photo-category-header p {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   PHOTO GRID
+   ========================================= */
+
+.photo-grid {
+    columns: 4 250px;
+
+    column-gap: 20px;
+}
+
+
+/* =========================================
+   PHOTO ITEM
+   ========================================= */
+
+.photo-item {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    break-inside: avoid;
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.photo-item img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+/* =========================================
+   PHOTO HOVER
+   ========================================= */
+
+.photo-item::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.photo-item:hover::after {
+    opacity: 1;
+}
+
+
+.photo-item:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   PHOTO NUMBER
+   ========================================= */
+
+.photo-number {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 15px;
+    left: 15px;
+
+    font-size: 9px;
+
+    line-height: 1;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.photo-item:hover .photo-number {
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .photo-grid {
+        columns: 3 220px;
+
+        column-gap: 16px;
+    }
+
+
+    .photo-item {
+        margin-bottom: 16px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .photography-page {
+        padding-bottom: 80px;
+    }
+
+
+    .photo-category {
+        margin-bottom: 100px;
+    }
+
+
+    .photo-category-header {
+        gap: 15px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .photo-category-number {
+        font-size: 10px;
+    }
+
+
+    .photo-category-header h2 {
+        font-size: 19px;
+    }
+
+
+    .photo-category-header p {
+        font-size: 10px;
+    }
+
+
+    .photo-grid {
+        columns: 2;
+
+        column-gap: 12px;
+    }
+
+
+    .photo-item {
+        margin-bottom: 12px;
+    }
+
+
+    .photo-number {
+        display: none;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .photo-category {
+        margin-bottom: 80px;
+    }
+
+
+    .photo-category-header {
+        margin-bottom: 25px;
+    }
+
+
+    .photo-category-header h2 {
+        font-size: 17px;
+    }
+
+
+    .photo-grid {
+        columns: 2;
+
+        column-gap: 8px;
+    }
+
+
+    .photo-item {
+        margin-bottom: 8px;
+    }
+
+}
+/* =========================================
+   DESIGNS
+   ========================================= */
+
+.designs-page {
+    padding-bottom: 150px;
+}
+
+
+/* =========================================
+   DESIGN PROJECT
+   ========================================= */
+
+.design-project {
+    margin-bottom: 180px;
+}
+
+
+/* =========================================
+   DESIGN PROJECT HEADER
+   ========================================= */
+
+.design-project-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+
+.design-project-number {
+    padding-top: 5px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.45;
+}
+
+
+.design-project-header h2 {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    letter-spacing: 0.03em;
+}
+
+
+.design-project-header p {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   DESIGN PROJECT CONTENT
+   ========================================= */
+
+.design-project-content {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(280px, 0.75fr);
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   DESIGN IMAGES
+   ========================================= */
+
+.design-project-images {
+    display: grid;
+
+    grid-template-columns:
+        120px
+        120px
+        minmax(0, 1fr);
+
+    grid-template-rows:
+        auto
+        auto;
+
+    gap: 15px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   DESIGN IMAGE
+   ========================================= */
+
+.design-image {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.design-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+/* =========================================
+   DESIGN IMAGE LAYOUT
+   ========================================= */
+
+/* Image 1 */
+
+.design-project-images .design-image:nth-child(1) {
+    grid-column: 1;
+
+    grid-row: 1;
+
+    align-self: start;
+}
+
+
+/* Image 2 */
+
+.design-project-images .design-image:nth-child(2) {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    align-self: start;
+}
+
+
+/* Image 3 — Main Image */
+
+.design-project-images .design-image:nth-child(3) {
+    grid-column: 3;
+
+    grid-row: 1 / 3;
+
+    align-self: start;
+}
+
+
+/* Image 4 */
+
+.design-project-images .design-image:nth-child(4) {
+    grid-column: 1;
+
+    grid-row: 2;
+
+    align-self: start;
+}
+
+
+/* =========================================
+   DESIGN IMAGE HOVER
+   ========================================= */
+
+.design-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.design-image:hover::after {
+    opacity: 1;
+}
+
+
+.design-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   DESIGN PROJECT INFO
+   ========================================= */
+
+.design-project-info {
+    position: sticky;
+
+    top: 140px;
+
+    padding-top: 5px;
+}
+
+
+.design-category {
+    display: block;
+
+    margin-bottom: 22px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+
+    opacity: 0.45;
+}
+
+
+.design-project-info h3 {
+    margin: 0 0 18px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    font-weight: 500;
+
+    letter-spacing: 0.01em;
+}
+
+
+.design-project-info p {
+    max-width: 400px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    letter-spacing: 0.03em;
+
+    opacity: 0.6;
+}
+
+
+/* =========================================
+   SINGLE DESIGN
+   ========================================= */
+
+.single-design {
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(280px, 0.75fr);
+}
+
+
+/* =========================================
+   DESIGN COMPANY
+   ========================================= */
+
+.design-company {
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   DESIGN COMPANY HEADER
+   ========================================= */
+
+.design-company-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.design-company-number {
+    padding-top: 5px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.45;
+}
+
+
+.design-company-header h2 {
+    margin: 0;
+
+    font-size: 28px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: 0.03em;
+}
+
+
+.design-company-header p {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.08em;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   DESIGN COMPANY DESCRIPTION
+   ========================================= */
+
+.design-company-description {
+    max-width: 650px;
+
+    margin:
+        0
+        0
+        80px
+        50px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    letter-spacing: 0.03em;
+
+    opacity: 0.55;
+}
+
+
+/* =========================================
+   ENDMOOD DESIGN
+   ========================================= */
+
+.endmood-design {
+    display: grid;
+
+    grid-template-columns:
+        35px
+        minmax(0, 1.4fr)
+        minmax(280px, 0.75fr);
+
+    gap: 35px;
+
+    align-items: start;
+
+    margin-bottom: 120px;
+}
+
+
+/* =========================================
+   ENDMOOD NUMBER
+   ========================================= */
+
+.endmood-design-number {
+    padding-top: 5px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.4;
+}
+
+
+/* =========================================
+   ENDMOOD IMAGE
+   ========================================= */
+
+.endmood-image {
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.endmood-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+.endmood-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.endmood-image:hover::after {
+    opacity: 1;
+}
+
+
+.endmood-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   ENDMOOD INFO
+   ========================================= */
+
+.endmood-info {
+    padding-top: 5px;
+}
+
+
+.endmood-info > span {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+
+    opacity: 0.45;
+}
+
+
+.endmood-info h3 {
+    margin: 0 0 18px;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    font-weight: 500;
+
+    letter-spacing: 0.01em;
+}
+
+
+.endmood-info p {
+    max-width: 380px;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    letter-spacing: 0.03em;
+
+    opacity: 0.6;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .design-project-content {
+        grid-template-columns:
+            minmax(0, 1.5fr)
+            minmax(230px, 0.75fr);
+
+        gap: 45px;
+    }
+
+
+    .design-project-images {
+        grid-template-columns:
+            90px
+            90px
+            minmax(0, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .endmood-design {
+        grid-template-columns:
+            30px
+            minmax(0, 1.4fr)
+            minmax(230px, 0.75fr);
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .designs-page {
+        padding-bottom: 80px;
+    }
+
+
+    .design-project {
+        margin-bottom: 110px;
+    }
+
+
+    .design-project-header {
+        gap: 15px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .design-project-number {
+        font-size: 10px;
+    }
+
+
+    .design-project-header h2 {
+        font-size: 15px;
+    }
+
+
+    .design-project-header p {
+        font-size: 10px;
+    }
+
+
+    /* =====================================
+       PROJECT
+       ===================================== */
+
+    .design-project-content {
+        display: block;
+    }
+
+
+    /* =====================================
+       DESIGN IMAGES
+       ===================================== */
+
+    .design-project-images {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        grid-template-rows: auto;
+
+        gap: 10px;
+
+        margin-bottom: 35px;
+    }
+
+
+    /* Reset desktop positioning */
+
+    .design-project-images .design-image:nth-child(1),
+    .design-project-images .design-image:nth-child(2),
+    .design-project-images .design-image:nth-child(3),
+    .design-project-images .design-image:nth-child(4) {
+        grid-column: auto;
+
+        grid-row: auto;
+    }
+
+
+    /* Main image */
+
+    .design-project-images .design-image:nth-child(3) {
+        grid-column: 1 / -1;
+
+        order: 3;
+    }
+
+
+    /* Letterhead */
+
+    .design-project-images .design-image:nth-child(4) {
+        order: 4;
+    }
+
+
+    /* =====================================
+       SINGLE IMAGE
+       ===================================== */
+
+    .single-design .design-image {
+        margin-bottom: 35px;
+    }
+
+
+    /* =====================================
+       INFO
+       ===================================== */
+
+    .design-project-info {
+        position: static;
+
+        padding-top: 0;
+    }
+
+
+    .design-category {
+        margin-bottom: 14px;
+
+        font-size: 9px;
+    }
+
+
+    .design-project-info h3 {
+        margin-bottom: 12px;
+
+        font-size: 17px;
+    }
+
+
+    .design-project-info p {
+        max-width: 100%;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+
+    /* =====================================
+       DESIGN COMPANY
+       ===================================== */
+
+    .design-company {
+        margin-top: 0;
+    }
+
+
+    .design-company-header {
+        gap: 15px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .design-company-number {
+        font-size: 10px;
+    }
+
+
+    .design-company-header h2 {
+        font-size: 22px;
+    }
+
+
+    .design-company-header p {
+        font-size: 10px;
+    }
+
+
+    .design-company-description {
+        margin:
+            0
+            0
+            55px
+            25px;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+
+    /* =====================================
+       ENDMOOD ITEMS
+       ===================================== */
+
+    .endmood-design {
+        display: block;
+
+        margin-bottom: 80px;
+    }
+
+
+    .endmood-design-number {
+        margin-bottom: 12px;
+
+        padding-top: 0;
+
+        font-size: 9px;
+    }
+
+
+    .endmood-image {
+        margin-bottom: 30px;
+    }
+
+
+    .endmood-info {
+        padding-top: 0;
+    }
+
+
+    .endmood-info > span {
+        margin-bottom: 12px;
+
+        font-size: 9px;
+    }
+
+
+    .endmood-info h3 {
+        margin-bottom: 12px;
+
+        font-size: 17px;
+    }
+
+
+    .endmood-info p {
+        max-width: 100%;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .design-project {
+        margin-bottom: 85px;
+    }
+
+
+    .design-project-header {
+        margin-bottom: 25px;
+    }
+
+
+    .design-project-header h2 {
+        font-size: 14px;
+    }
+
+
+    .design-project-images {
+        gap: 7px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .design-project-info h3 {
+        font-size: 15px;
+    }
+
+
+    .design-project-info p {
+        font-size: 11px;
+    }
+
+
+    .design-company-header h2 {
+        font-size: 20px;
+    }
+
+
+    .design-company-description {
+        margin-left: 20px;
+
+        font-size: 11px;
+    }
+
+
+    .endmood-design {
+        margin-bottom: 65px;
+    }
+
+
+    .endmood-info h3 {
+        font-size: 15px;
+    }
+
+
+    .endmood-info p {
+        font-size: 11px;
+    }
+
+}
+/* =========================================
+   SMALLER SINGLE DESIGN IMAGES
+   ========================================= */
+
+.single-design .design-image {
+    width: 50%;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .single-design .design-image {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   ARTICLES
+   ========================================= */
+
+.articles-page {
+    padding-bottom: 150px;
+}
+
+
+/* =========================================
+   ARTICLES LIST
+   ========================================= */
+
+.articles-list {
+    width: 100%;
+}
+
+
+/* =========================================
+   ARTICLE ITEM
+   ========================================= */
+
+.article-item {
+    display: grid;
+
+    grid-template-columns:
+        35px
+        minmax(0, 1fr);
+
+    gap: 35px;
+
+    align-items: start;
+
+    margin-bottom: 130px;
+}
+
+
+/* =========================================
+   ARTICLE NUMBER
+   ========================================= */
+
+.article-number {
+    padding-top: 5px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.4;
+}
+
+
+/* =========================================
+   ARTICLE CONTENT
+   ========================================= */
+
+.article-content {
+    min-width: 0;
+}
+
+
+/* =========================================
+   ARTICLE IMAGE
+   ========================================= */
+
+.article-image {
+    position: relative;
+
+    display: block;
+
+    width: 75%;
+
+    overflow: hidden;
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+.article-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+
+/* =========================================
+   ARTICLE IMAGE HOVER
+   ========================================= */
+
+.article-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.article-image:hover::after {
+    opacity: 1;
+}
+
+
+.article-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   ARTICLE INFO
+   ========================================= */
+
+.article-info {
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-top: 20px;
+}
+
+
+/* =========================================
+   ARTICLE TITLE
+   ========================================= */
+
+.article-info h2 {
+    margin: 0;
+
+    max-width: 800px;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+    letter-spacing: 0.01em;
+}
+
+
+/* =========================================
+   READ MORE
+   ========================================= */
+
+.article-read-more {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+
+    transition:
+        opacity 0.2s ease;
+}
+
+
+.article-read-more:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   READ MORE ARROW
+   ========================================= */
+
+.article-read-more span {
+    display: inline-block;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    letter-spacing: 0;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.article-read-more:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .articles-page {
+        padding-bottom: 80px;
+    }
+
+
+    .article-item {
+        grid-template-columns:
+            25px
+            minmax(0, 1fr);
+
+        gap: 15px;
+
+        margin-bottom: 80px;
+    }
+
+
+    .article-number {
+        padding-top: 3px;
+
+        font-size: 10px;
+    }
+
+
+    .article-info {
+        display: block;
+
+        padding-top: 15px;
+    }
+
+
+    .article-info h2 {
+        margin-bottom: 14px;
+
+        font-size: 16px;
+
+        line-height: 1.4;
+    }
+
+
+    .article-read-more {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .article-item {
+        grid-template-columns:
+            20px
+            minmax(0, 1fr);
+
+        gap: 10px;
+
+        margin-bottom: 65px;
+    }
+
+
+    .article-number {
+        font-size: 9px;
+    }
+
+
+    .article-info h2 {
+        font-size: 15px;
+    }
+
+
+    .article-read-more {
+        font-size: 9px;
+    }
+
+
+    .article-read-more span {
+        font-size: 16px;
+    }
+
+}
