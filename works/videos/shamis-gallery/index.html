@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shamis Gallery | Hermann Naser</title>
+
+    <meta
+        name="description"
+        content="Shamis Gallery videography project by Hermann Naser."
+    >
+
+    <meta name="author" content="Hermann Naser">
+
+    <link
+        rel="icon"
+        href="../../../favicon.ico"
+        type="image/x-icon"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="../../../themes/default/css/style.css"
+    >
+
+    <!-- Works CSS -->
+    <link
+        rel="stylesheet"
+        href="../../../themes/default/css/works.css"
+    >
+
+    <style>
+        .shamis-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .shamis-video video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+
+        <nav
+            class="main-navigation"
+            aria-label="Main Navigation"
+        >
+
+            <input
+                type="checkbox"
+                id="menu-toggle"
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+
+            <label
+                for="menu-toggle"
+                class="menu-button"
+            >
+                <img
+                    src="../../../themes/default/images/menu.png"
+                    alt="Open navigation menu"
+                    class="menu-icon menu-icon-normal"
+                >
+
+                <img
+                    src="../../../themes/default/images/menu-hover.png"
+                    alt=""
+                    class="menu-icon menu-icon-hover"
+                    aria-hidden="true"
+                >
+            </label>
+
+            <div class="menu-overlay"></div>
+
+            <div class="navigation-menu">
+                <ul>
+                    <li>
+                        <a href="../../../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="../../../about/index.html">About</a>
+                    </li>
+
+                    <li class="has-submenu">
+                        <input
+                            type="checkbox"
+                            id="works-toggle"
+                            class="works-toggle"
+                        >
+
+                        <label
+                            for="works-toggle"
+                            class="works-label"
+                        >
+                            Works
+                        </label>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="../../articles/index.html">
+                                    Articles
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../../designs/index.html">
+                                    Designs
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../../photos/index.html">
+                                    Photos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../index.html">
+                                    Videos
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../../../contact/index.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="works-page videos-page">
+
+        <section class="works-intro">
+            <p class="works-label">WORKS</p>
+            <h1>Shamis Gallery</h1>
+        </section>
+
+        <section class="video-company">
+
+            <div class="company-header">
+                <span class="company-number">03</span>
+
+                <div>
+                    <h2>Shamis Gallery</h2>
+                    <p>Videography</p>
+                </div>
+            </div>
+
+            <div class="shamis-video">
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
+                    <source
+                        src="../../../media/videos/shamis/open-state.mp4"
+                        type="video/mp4"
+                    >
+                </video>
+            </div>
+
+        </section>
+
+        <p style="margin-top: 40px;">
+            <a href="../index.html">
+                ← Back to Videos
+            </a>
+        </p>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>Powered by curiosity</p>
+    </footer>
+
+</body>
+</html>
